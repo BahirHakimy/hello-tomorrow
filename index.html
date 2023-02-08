@@ -15,6 +15,61 @@
     <main class="bg-[url('./assets/backgrounds/welcome.png')] bg-cover">
       <header class="p-4 md:p-0">
         <nav class="flex flex-col justify-center items-start md:items-center">
+          <div
+            id="mobile-menu"
+            class="fixed top-0 -left-full w-full h-screen z-10 bg-primary-transparent backdrop-blur flex flex-col p-4 transition-all"
+          >
+            <a
+              href="#"
+              id="close-button"
+              class="self-end"
+              aria-label="close menu"
+            >
+              <img
+                width="32px"
+                height="32px"
+                src="./assets/icons/close.svg"
+                alt="menu-icon"
+              />
+            </a>
+            <ul class="relative z-10">
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent mobile-menu-item"
+              >
+                <a
+                  class="font-semibold text-secondary block"
+                  href="./about.html"
+                  >About</a
+                >
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent mobile-menu-item"
+              >
+                <a
+                  class="font-semibold text-secondary block"
+                  href="index.html#main-program"
+                  >Program</a
+                >
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent mobile-menu-item"
+              >
+                <a class="font-semibold text-secondary block" href="#">Join</a>
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent mobile-menu-item"
+              >
+                <a class="font-semibold text-secondary block" href="#"
+                  >Sponser</a
+                >
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent mobile-menu-item"
+              >
+                <a class="font-semibold text-secondary block" href="#">News</a>
+              </li>
+            </ul>
+          </div>
           <ul
             class="hidden md:flex justify-end gap-8 bg-walnut w-full md:px-8 lg:px-16 xl:px-32 py-2"
           >
@@ -103,7 +158,12 @@
               </li>
             </ul>
           </div>
-          <a href="#" class="md:hidden" aria-label="hamburger menu">
+          <a
+            href="#"
+            id="hamburger-button"
+            class="md:hidden"
+            aria-label="hamburger menu"
+          >
             <img
               width="32px"
               height="32px"
@@ -383,5 +443,6 @@
         </p>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
