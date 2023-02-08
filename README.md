@@ -22,9 +22,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 My Portfolio <a name="about-project"></a>
+# 📖 Hello Tomorrow <a name="about-project"></a>
 
-**My Portfolio** is my portfolio website, its currently under development and I will add more features as I go forward in the program.
+**Hello Tomorrow** is the first capstone project at Microverse, its a site that describes a Global Summit which is happening in February 2023.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -35,6 +35,7 @@
   <ul>
    <li>HTML</li>
    <li>CSS</li>
+   <li>Javascript</li>
   </ul>
 </details>
 
@@ -67,7 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://bahirhakimy.github.io/My-Portfolio/)
+- [Live Demo Link](https://bahirhakimy.github.io/hello-tomorrow/)
 
 <p align="right"><a href="#readme-top">👆</a></p>
 
@@ -86,7 +87,7 @@ In order to run this project you need:
 ### Setup
 
 Clone the repo into your local machine:
-git clone github.com/BahirHakimy/My-Portfolio.git
+git clone github.com/BahirHakimy/hello-tomorrow.git
 
 ### Usage
 
@@ -104,24 +105,13 @@ You can open the `index.html` file using a web browser or using VsCode extension
 - Twitter: [:heart:](https://twitter.com/bahirhakimy)
 - LinkedIn: [:heart:](https://linkedin.com/in/bahirhakimy)
 
-👤 **Muhammad Davlatov**
-
-- GitHub: [Muhammad0602](https://github.com/Muhammad0602)
-- Twitter: [Muhammad Davlatov](https://twitter.com/MuhammadDavla20)
-- LinkedIn: [Muhammad Davlatov](https://www.linkedin.com/in/muhammad-davlatov-6a8536254/)
-
-👤 **[Alejandro-Bernal-M]**
-
-- GitHub: [Muhammad0602](https://github.com/Alejandro-Bernal-M)
-
 <p align="right"><a href="#readme-top">👆</a></p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Project Detail**
-- **Multiple color themes**
+- **Selecting Tickets**
 
 <p align="right"><a href="#readme-top">👆</a></p>
 
