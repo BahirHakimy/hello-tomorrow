@@ -24,7 +24,10 @@
 
 # 📖 Hello Tomorrow <a name="about-project"></a>
 
-**Hello Tomorrow** is the first capstone project at Microverse, its a site that describes a Global Summit which is happening in February 2023.
+**Hello Tomorrow** is the first capstone project at Microverse, it's a site that describes a Global Summit which is happening in February 2023. This page is created based on design by [Cindy Shin](https://www.behance.net/adagio07).
+
+## 📘 Intro Video
+https://www.loom.com/share/a2a41a9ada0b41f68f1c6f6e6c97378b"
 
 ## 🛠 Built With <a name="built-with"></a>
 
