@@ -103,7 +103,7 @@ if (speakersList) {
       ${speaker.description}
     </p>
   </div>
-</li>`
+</li>`,
     )
     .join('');
 }
