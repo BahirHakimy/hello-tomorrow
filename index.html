@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,25 +13,123 @@
   </head>
   <body class="text-dark-smoke font-Lato">
     <main class="bg-[url('./assets/backgrounds/welcome.png')] bg-cover">
-      <header class="p-4">
-        <img
-          width="32px"
-          height="32px"
-          src="./assets/icons/hamburger.svg"
-          alt="menu-icon"
-        />
+      <header class="p-4 md:p-0">
+        <nav class="flex flex-col justify-center items-start md:items-center">
+          <ul
+            class="hidden md:flex justify-end gap-8 bg-walnut w-full md:px-8 lg:px-16 xl:px-32 py-2"
+          >
+            <li class="text-white font-semibold text-sm">
+              <a
+                href="https://www.facebook.com/profile.php?id=100004886324671"
+                target="_blank"
+                aria-label="facebook"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a
+                href="https://twitter.com/bahir_hakimy"
+                target="_blank"
+                aria-label="twitter"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a href="#">English</a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a href="#">MyPage</a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a href="#">Logout</a>
+            </li>
+          </ul>
+          <div
+            class="hidden md:flex justify-between items-center bg-white w-full md:px-8 lg:px-16 xl:px-32"
+          >
+            <a href="." aria-label="logo" class="p-4">
+              <img
+                class="w-32 h-auto"
+                src="./assets/icons/logo.svg"
+                alt="logo"
+              />
+            </a>
+            <ul id="nav-links" class="flex justify-between items-center gap-8">
+              <li>
+                <a
+                  class="text-sm font-semibold text-secondary hover:text-primary"
+                  href="./about.html"
+                >
+                  About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm font-semibold text-secondary hover:text-primary"
+                  href="#main-program"
+                  >Program</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm font-semibold text-secondary hover:text-primary"
+                  href="#"
+                  >Join</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm font-semibold text-secondary hover:text-primary"
+                  href="#"
+                  >Sponser</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm font-semibold text-secondary hover:text-primary"
+                  href="#"
+                  >News</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary hover:text-primary active:border-2 p-2 active:font-semibold border-primary"
+                >
+                  CC Campaign
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="md:hidden" aria-label="hamburger menu">
+            <img
+              width="32px"
+              height="32px"
+              src="./assets/icons/hamburger.svg"
+              alt="menu-icon"
+            />
+          </a>
+        </nav>
       </header>
       <section
         id="welcome"
-        class="my-12 p-4 flex flex-col justify-center items-start"
+        class="my-12 p-4 xl:px-32 lg:px-16 md:px-8 flex flex-col justify-center items-start"
       >
-        <p class="text-xl text-primary my-1">"Hello! Sharing world"</p>
+        <p class="text-xl text-primary my-1 md:text-3xl">
+          "Hello! Sharing world"
+        </p>
         <div
           class="bg-[url('./assets/backgrounds/title.jpg')] bg-clip-text text-transparent bg-center bg-cover"
         >
-          <h1 class="text-5xl font-bold">HELLO TOMORROW GLOBAL SUMMIT 2023</h1>
+          <h1 class="text-5xl font-bold md:text-8xl">
+            HELLO TOMORROW GLOBAL SUMMIT 2023
+          </h1>
         </div>
-        <div class="p-4 my-8 border-2 text-sm border-white border-solid">
+        <div
+          class="p-4 my-8 border-2 text-sm border-white border-solid lg:max-w-[60%]"
+        >
           <p>
             Under the high patronage of Mr. Emmanuel Macron president of the
             French republic, Welcome to the epiccenter of Deep Tech, We present
@@ -46,13 +144,20 @@
     </main>
     <section
       id="main-program"
-      class="flex flex-col justify-center items-center gap-2 py-4 bg-[url('./assets/backgrounds/programs.jpg')] bg-center"
+      class="flex flex-col justify-center items-center gap-2 py-4 xl:px-32 lg:px-16 md:px-8 bg-[url('./assets/backgrounds/programs.jpg')] bg-center"
     >
       <h2 class="text-light text-2xl mt-8 font-semibold">Main Program</h2>
       <div class="w-12 h-[2px] rounded mb-8 bg-primary"></div>
-      <ul id="programs" class="flex flex-col gap-2 justify-center py-4">
-        <li class="grid grid-cols-2 bg-[#383b4277] items-center mx-2 pr-2">
-          <div class="flex justify-start gap-2 items-center p-4">
+      <ul
+        id="programs"
+        class="flex flex-col md:flex-row flex-wrap gap-2 justify-center py-4"
+      >
+        <li
+          class="grid grid-cols-2 md:grid-cols-1 bg-[#383b4277] items-center mx-2 pr-2 md:p-4 hover:border-2 border-light cursor-pointer md:h-72 md:w-52 md:mx-0"
+        >
+          <div
+            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-4"
+          >
             <img
               class="w-16 h-auto"
               src="./assets/icons/lecture.png"
@@ -60,13 +165,17 @@
             />
             <p class="text-xl font-bold text-primary w-max">Lecture</p>
           </div>
-          <p class="text-light">
+          <p class="text-light md:text-center md:m-auto">
             Listen to the speaker from various countries about the messages of
             sharing and opening
           </p>
         </li>
-        <li class="grid grid-cols-2 bg-[#383b4277] items-center mx-2 pr-2">
-          <div class="flex justify-start gap-2 items-center p-4">
+        <li
+          class="grid grid-cols-2 md:grid-cols-1 bg-[#383b4277] items-center mx-2 pr-2 md:p-4 hover:border-2 border-light cursor-pointer md:h-72 md:w-52 md:mx-0"
+        >
+          <div
+            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-4"
+          >
             <img
               class="w-16 h-auto"
               src="./assets/icons/exhibition.png"
@@ -74,13 +183,17 @@
             />
             <p class="text-xl font-bold text-primary w-max">CC Exhibition</p>
           </div>
-          <p class="text-light">
+          <p class="text-light md:text-center md:m-auto">
             Appreciate various creations applying CC license of artists,
             organized from Art Center Nabi
           </p>
         </li>
-        <li class="grid grid-cols-2 bg-[#383b4277] items-center mx-2 pr-2">
-          <div class="flex justify-start gap-2 items-center p-4">
+        <li
+          class="grid grid-cols-2 md:grid-cols-1 bg-[#383b4277] items-center mx-2 pr-2 md:p-4 hover:border-2 border-light cursor-pointer md:h-72 md:w-52 md:mx-0"
+        >
+          <div
+            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-4"
+          >
             <img
               class="w-16 h-auto"
               src="./assets/icons/forum.png"
@@ -88,13 +201,17 @@
             />
             <p class="text-xl font-bold text-primary w-max">Forum</p>
           </div>
-          <p class="text-light">
+          <p class="text-light md:text-center md:m-auto">
             Have the time to share your thoughts and opinions with experts for
             each tobic
           </p>
         </li>
-        <li class="grid grid-cols-2 bg-[#383b4277] items-center mx-2 pr-2">
-          <div class="flex justify-start gap-2 items-center p-4">
+        <li
+          class="grid grid-cols-2 md:grid-cols-1 bg-[#383b4277] items-center mx-2 pr-2 md:p-4 hover:border-2 border-light cursor-pointer md:h-72 md:w-52 md:mx-0"
+        >
+          <div
+            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-4"
+          >
             <img
               class="w-16 h-auto"
               src="./assets/icons/workshop.png"
@@ -102,13 +219,17 @@
             />
             <p class="text-xl font-bold text-primary w-max">Workshop</p>
           </div>
-          <p class="text-light">
+          <p class="text-light md:text-center md:m-auto">
             Try creating your own work using open source license rather than
             just watching
           </p>
         </li>
-        <li class="grid grid-cols-2 bg-[#383b4277] items-center mx-2 pr-2">
-          <div class="flex justify-start gap-2 items-center p-4">
+        <li
+          class="grid grid-cols-2 md:grid-cols-1 bg-[#383b4277] items-center mx-2 pr-2 md:p-4 hover:border-2 border-light cursor-pointer md:h-72 md:w-52 md:mx-0"
+        >
+          <div
+            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-4"
+          >
             <img
               class="w-16 h-auto"
               src="./assets/icons/ignite.png"
@@ -116,27 +237,35 @@
             />
             <p class="text-xl font-bold text-primary w-max">CC Ignite</p>
           </div>
-          <p class="text-light">
+          <p class="text-light md:text-center md:m-auto">
             Get opportunities to network with CC affiliate around the world,
             also after the summit.
           </p>
         </li>
       </ul>
       <button
-        class="border-none px-6 py-4 m-8 font-semibold bg-primary text-light rounded"
+        class="border-none md:hidden px-6 py-4 m-8 font-semibold bg-primary text-light rounded"
       >
         Join Hello Tomorrow Global Summit
+      </button>
+      <button
+        class="hidden md:block border-b m-8 font-semibold bg-transparent text-light"
+      >
+        SEE THE WHOLE PROGRAM
       </button>
     </section>
     <section
       id="speakers"
-      class="flex flex-col justify-center items-center gap-2 p-4"
+      class="flex flex-col justify-center items-center gap-2 p-4 xl:px-32 lg:px-16 md:px-8"
     >
-      <h2 class="text-secodary text-2xl mt-8 font-semibold">
+      <h2 class="text-secondary text-2xl mt-8 font-semibold">
         Featured Speakers
       </h2>
       <div class="w-12 h-[2px] rounded mb-8 bg-primary"></div>
-      <ul id="speakers-list" class="flex flex-col justify-center items-center">
+      <ul
+        id="speakers-list"
+        class="flex flex-col md:grid grid-cols-2 justify-center items-center"
+      >
         <li class="flex justify-center items-center my-4">
           <div class="relative flex w-2/5">
             <img
@@ -151,7 +280,9 @@
             />
           </div>
           <div class="w-3/5">
-            <h3 class="text-secodary text-2xl font-semibold">Irina Borodina</h3>
+            <h3 class="text-secondary text-2xl font-semibold">
+              Irina Borodina
+            </h3>
             <p class="text-sm text-primary italic">
               Professor, Novo Nordisk Foundation Center for Biosustainability
             </p>
@@ -176,7 +307,9 @@
             />
           </div>
           <div class="w-3/5">
-            <h3 class="text-secodary text-2xl font-semibold">Oliver Rolland</h3>
+            <h3 class="text-secondary text-2xl font-semibold">
+              Oliver Rolland
+            </h3>
             <p class="text-sm text-primary italic">
               Managing Director chez Toulouse White Biotechnology (TWB)
             </p>
@@ -190,10 +323,65 @@
         </li>
       </ul>
       <button
-        class="flex gap-2 justify-center items-center border-2 border-light w-full p-2 m-8"
+        class="flex gap-2 justify-center items-center border-2 border-light w-full p-2 m-8 md:hidden"
       >
         MORE <i class="fa-solid fa-chevron-down text-primary"></i>
       </button>
     </section>
+    <section
+      id="partners"
+      class="hidden md:flex flex-col justify-center items-center p-4 gap-2 bg-secondary"
+    >
+      <h2 class="text-light text-2xl mt-8 font-semibold">Partners</h2>
+      <div class="w-12 h-[2px] rounded mb-8 bg-primary"></div>
+      <ul
+        id="partners-list"
+        class="flex justify-center items-center flex-wrap gap-2 md:gap-8"
+      >
+        <li class="w-32">
+          <a href="https://www.google.com/search?q=bcg" target="_blank">
+            <img src="./assets/images/BCG-Logo.png" alt="partner" />
+          </a>
+        </li>
+        <li class="w-32">
+          <a href="https://www.google.com/search?q=infineon" target="_blank">
+            <img src="./assets/images/Infineon-Logo.png" alt="partner" />
+          </a>
+        </li>
+        <li class="w-32">
+          <a href="https://www.google.com/search?q=gtt" target="_blank">
+            <img src="./assets/images/GTT-logo.png" alt="partner" />
+          </a>
+        </li>
+        <li class="w-32">
+          <a href="https://www.google.com/search?q=loreal" target="_blank">
+            <img src="./assets/images/Loreal-Logo.png" alt="partner" />
+          </a>
+        </li>
+        <li class="w-32">
+          <a href="https://www.google.com/search?q=orano" target="_blank">
+            <img src="./assets/images/Orano-Logo.png" alt="partner" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <footer
+      class="hidden md:grid grid-cols-2 justify-items-center items-center gap-4 p-8 my-8"
+    >
+      <img class="w-40" src="./assets/icons/logo.svg" alt="logo" />
+      <div class="flex flex-col gap-4">
+        <p class="text-sm font-semibold">
+          &copy;2023 Hello Tomorrow France. Some Rights Reserved.
+        </p>
+        <p>
+          Hello Tomorrow was created in 2011 by a group of individuals convinced
+          that science has the potential to change the world for the better. for
+          any questions contact us on
+          <a href="mailto:contact@hello-tomorrow.org" class="font-semibold"
+            >contact@hello-tomorrow.org</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

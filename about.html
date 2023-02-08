@@ -15,24 +15,175 @@
     <main
       class="bg-[url('./assets/backgrounds/welcome.png')] bg-cover bg-center"
     >
-      <header class="p-4">
-        <img
-          width="32px"
-          height="32px"
-          src="./assets/icons/hamburger.svg"
-          alt="menu-icon"
-        />
+      <header class="p-4 md:p-0">
+        <nav class="flex flex-col justify-center items-start md:items-center">
+          <div
+            id="mobile-menu"
+            class="fixed top-0 left-0 w-full h-screen bg-primary-transparent backdrop-blur flex flex-col p-4"
+          >
+            <a
+              href="#"
+              id="close-button"
+              class="self-end"
+              aria-label="close menu"
+            >
+              <img
+                width="32px"
+                height="32px"
+                src="./assets/icons/close.svg"
+                alt="menu-icon"
+              />
+            </a>
+            <ul>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent"
+              >
+                <a
+                  class="font-semibold text-secondary block"
+                  href="./about.html"
+                  >About</a
+                >
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent"
+              >
+                <a
+                  class="font-semibold text-secondary block"
+                  href="index.html#main-program"
+                  >Program</a
+                >
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent"
+              >
+                <a class="font-semibold text-secondary block" href="#">Join</a>
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent"
+              >
+                <a class="font-semibold text-secondary block" href="#"
+                  >Sponser</a
+                >
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent"
+              >
+                <a class="font-semibold text-secondary block" href="#">News</a>
+              </li>
+            </ul>
+          </div>
+          <ul
+            class="hidden md:flex justify-end gap-8 bg-walnut w-full md:px-8 lg:px-16 xl:px-32 py-2"
+          >
+            <li class="text-white font-semibold text-sm">
+              <a
+                href="https://www.facebook.com/profile.php?id=100004886324671"
+                target="_blank"
+                aria-label="facebook"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a
+                href="https://twitter.com/bahir_hakimy"
+                target="_blank"
+                aria-label="twitter"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a href="#">Logout</a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a href="#">MyPage</a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a href="#">French</a>
+            </li>
+          </ul>
+          <div
+            class="hidden md:flex justify-between items-center bg-white w-full md:px-8 lg:px-16 xl:px-32"
+          >
+            <a href="." aria-label="logo" class="p-4">
+              <img
+                class="w-32 h-auto"
+                src="./assets/icons/logo.svg"
+                alt="logo"
+              />
+            </a>
+            <ul id="nav-links" class="flex justify-between items-center gap-8">
+              <li class="bg-light m-1 text-lg">
+                <a
+                  class="text-sm font-semibold text-secondary block"
+                  href="./about.html"
+                >
+                  About</a
+                >
+              </li>
+              <li class="bg-light m-1 text-lg">
+                <a
+                  class="text-sm font-semibold text-secondary block"
+                  href="index.html#main-program"
+                  >Program</a
+                >
+              </li>
+              <li class="bg-light m-1 text-lg">
+                <a class="text-sm font-semibold text-secondary block" href="#"
+                  >Join</a
+                >
+              </li>
+              <li>
+                <a class="text-sm font-semibold text-secondary w-full" href="#"
+                  >Sponser</a
+                >
+              </li>
+              <li>
+                <a class="text-sm font-semibold text-secondary w-full" href="#"
+                  >News</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary hover:text-primary active:border-2 p-2 active:font-semibold border-primary"
+                >
+                  CC Campaign
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="#"
+            id="hamburger-button"
+            class="md:hidden"
+            aria-label="hamburger menu"
+          >
+            <img
+              width="32px"
+              height="32px"
+              src="./assets/icons/hamburger.svg"
+              alt="menu-icon"
+            />
+          </a>
+        </nav>
       </header>
       <section
         id="about"
-        class="my-12 p-8 flex flex-col justify-center items-center"
+        class="my-12 p-8 xl:px-32 lg:px-16 flex flex-col justify-center items-center"
       >
-        <p class="text-xl text-primary my-1">"Hello! Sharing world"</p>
-        <h1 class="text-5xl font-bold text-primary text-center">
+        <p class="text-xl text-primary my-1 md:hidden">
+          "Hello! Sharing world"
+        </p>
+        <h1 class="text-5xl font-bold text-primary text-center md:max-w-[50%]">
           HELLO TOMORROW GLOBAL SUMMIT 2023
         </h1>
         <div
-          class="p-4 my-8 border text-sm bg-white border-light border-solid text-center"
+          class="hidden md:block mt-8 mb-2 w-8 h-[2px] rounded bg-primary-transparent"
+        ></div>
+        <div
+          class="p-4 my-8 border text-sm bg-white border-light border-solid text-center md:max-w-[60%]"
         >
           <p>
             Hello Tomorrow was created in 2011 by a group of individuals
@@ -48,23 +199,33 @@
           Please contact us per Email for any further questions about the Global
           Summit
         </p>
-        <p class="text-sm font-semibold mb-8">contact@hello-tomorrow.org</p>
+        <p class="text-sm font-semibold mb-8 mt-1">
+          <a href="mailto:contact@hello-tomorrow.org" class="font-semibold"
+            >contact@hello-tomorrow.org</a
+          >
+          <i
+            class="fa-solid fa-chevron-right hidden md:inline pl-1 font-normal"
+          ></i>
+        </p>
       </section>
     </main>
     <section
       id="logo-section"
       class="my-12 p-8 flex flex-col justify-center items-center gap-2 border-b border-b-light"
     >
-      <h2 class="text-secodary text-2xl mt-8 font-semibold text-center">
+      <h2 class="text-secondary text-2xl mt-8 font-semibold text-center">
         Hello Tommorrow Organization Logo
       </h2>
-      <div class="w-12 h-[2px] rounded bg-primary"></div>
-      <p class="text-center text-sm w-4/5 mb-8">
+      <div class="w-8 h-[2px] rounded bg-primary-transparent"></div>
+      <p class="text-center text-sm w-4/5 mb-8 md:max-w-[50%]">
         The logo of Hello Tomorrow organization was created by a team in Far Far
-        Away
+        Away, Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Aspernatur quia consequuntur assumenda adipisci rerum temporibus quae?
+        Error modi optio sed magni omnis impedit aut delectus voluptate, atque
+        esse quam incidunt.
       </p>
       <div
-        class="w-full max-w-2xl flex justify-center border border-light py-4 mb-8"
+        class="w-full max-w-2xl md:max-w-xl flex justify-center border border-light py-4 mb-8"
       >
         <img class="w-80 h-auto" src="./assets/icons/logo.svg" alt="logo" />
       </div>
@@ -73,11 +234,11 @@
       id="past-summits"
       class="my-12 p-8 flex flex-col justify-center items-center gap-2 border-b border-b-light"
     >
-      <h2 class="text-secodary text-2xl mt-8 font-semibold">
+      <h2 class="text-secondary text-2xl mt-8 font-semibold">
         See the past Global Summits
       </h2>
       <div class="w-12 h-[2px] rounded bg-primary"></div>
-      <p class="text-center text-sm w-4/5 mb-8">
+      <p class="text-center text-sm w-4/5 mb-8 md:font-semibold">
         Take a look at the last two Hello Tomorrow Global Summits which took
         place in Paris France
       </p>
@@ -111,7 +272,7 @@
     </section>
     <section
       id="partners"
-      class="flex flex-col justify-center items-center p-4 gap-2 bg-secodary"
+      class="flex md:hidden flex-col justify-center items-center p-4 gap-2 bg-secondary"
     >
       <h2 class="text-light text-2xl mt-8 font-semibold">Partners</h2>
       <div class="w-12 h-[2px] rounded mb-8 bg-primary"></div>
@@ -137,12 +298,22 @@
       </ul>
     </section>
     <footer
-      class="grid grid-cols-2 justify-items-center items-center gap-4 p-8"
+      class="grid grid-cols-2 justify-items-center items-center gap-4 p-8 my-8 md:text-light md:bg-secondary"
     >
       <img class="w-40" src="./assets/icons/logo.svg" alt="logo" />
-      <p class="text-sm">
-        &copy;2023 Hello Tomorrow France. Some Rights Reserved.
-      </p>
+      <div class="flex flex-col gap-4">
+        <p class="text-sm font-semibold">
+          &copy;2023 Hello Tomorrow France. Some Rights Reserved.
+        </p>
+        <p class="hidden md:block">
+          Hello Tomorrow was created in 2011 by a group of individuals convinced
+          that science has the potential to change the world for the better. for
+          any questions contact us on
+          <a href="mailto:contact@hello-tomorrow.org" class="font-semibold"
+            >contact@hello-tomorrow.org</a
+          >
+        </p>
+      </div>
     </footer>
   </body>
 </html>
