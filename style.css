@@ -43,7 +43,8 @@
 
 @font-face {
   font-family: 'Cocogoose';
-  src: url('./assets/fonts/cocogoose/Cocogoose-Regular-Italic.ttf')
+  src:
+    url('./assets/fonts/cocogoose/Cocogoose-Regular-Italic.ttf')
     format('truetype');
   font-weight: normal;
   font-style: italic;
@@ -51,7 +52,8 @@
 
 @font-face {
   font-family: 'Cocogoose';
-  src: url('./assets/fonts/cocogoose/Cocogoose-SemiLight.ttf')
+  src:
+    url('./assets/fonts/cocogoose/Cocogoose-SemiLight.ttf')
     format('truetype');
   font-weight: 300;
 }
@@ -126,9 +128,21 @@ html {
   tab-size: 4;
 
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    'Noto Sans',
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
 
   /* 4 */
   font-feature-settings: normal;
@@ -218,8 +232,15 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Liberation Mono',
+    'Courier New',
+    monospace;
 
   /* 1 */
   font-size: 1em;
@@ -1069,12 +1090,14 @@ video {
 .backdrop-blur {
   --tw-backdrop-blur: blur(8px);
 
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+  -webkit-backdrop-filter:
+    var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
     var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
     var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
     var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
     var(--tw-backdrop-sepia);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+  backdrop-filter:
+    var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
     var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
     var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
     var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
@@ -1251,4 +1274,3 @@ video {
     padding-right: 8rem;
   }
 }
-
