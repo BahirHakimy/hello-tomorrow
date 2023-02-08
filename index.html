@@ -10,24 +10,10 @@
       src="https://kit.fontawesome.com/30e1c676d3.js"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#ec5242',
-              secodary: '#272a31',
-              smoke: 'd3d3d3',
-            },
-          },
-        },
-      };
-    </script> -->
   </head>
-  <body>
-    <main>
-      <header>
+  <body class="text-dark-smoke font-Lato">
+    <main class="bg-[url('./assets/backgrounds/welcome.png')] bg-cover">
+      <header class="p-4">
         <img
           width="32px"
           height="32px"
@@ -35,107 +21,167 @@
           alt="menu-icon"
         />
       </header>
-      <section id="welcome">
-        <p id="caption">"Hello! Sharing world"</p>
-        <h1>HELLO TOMORROW GLOBAL SUMMIT 2023</h1>
-        <div class="description">
+      <section
+        id="welcome"
+        class="my-12 p-4 flex flex-col justify-center items-start"
+      >
+        <p class="text-xl text-primary my-1">"Hello! Sharing world"</p>
+        <div
+          class="bg-[url('./assets/backgrounds/title.jpg')] bg-clip-text text-transparent bg-center bg-cover"
+        >
+          <h1 class="text-5xl font-bold">HELLO TOMORROW GLOBAL SUMMIT 2023</h1>
+        </div>
+        <div class="p-4 my-8 border-2 text-sm border-white border-solid">
           <p>
             Under the high patronage of Mr. Emmanuel Macron president of the
-            French republic, Welcome to the epiccenter of Deep Tech
+            French republic, Welcome to the epiccenter of Deep Tech, We present
+            you the new era of technology
           </p>
         </div>
-        <h2>2023.03.9(FRI) ~ 10(SAT)</h2>
-        <p class="location">@ Centquater Paris France</p>
+        <h2 class="text-3xl my-2 font-bold">2023.03.9(FRI) ~ 10(SAT)</h2>
+        <p class="text-sm font-semibold mb-8">
+          @ The CENTQUATRE-PARIS, 5 Rue Curial, 75019 Paris France
+        </p>
       </section>
     </main>
-    <section id="main-program">
-      <h2>Main Program</h2>
-      <div class="indicator"></div>
-      <ul id="programs">
-        <li class="program">
-          <div class="icon-set">
-            <img src="./assets/icons/lecture.png" alt="lecture-icon" />
-            <p>Lecture</p>
+    <section
+      id="main-program"
+      class="flex flex-col justify-center items-center gap-2 py-4 bg-[url('./assets/backgrounds/programs.jpg')] bg-center"
+    >
+      <h2 class="text-light text-2xl mt-8 font-semibold">Main Program</h2>
+      <div class="w-12 h-[2px] rounded mb-8 bg-primary"></div>
+      <ul id="programs" class="flex flex-col gap-2 justify-center py-4">
+        <li class="grid grid-cols-2 bg-[#383b4277] items-center mx-2 pr-2">
+          <div class="flex justify-start gap-2 items-center p-4">
+            <img
+              class="w-16 h-auto"
+              src="./assets/icons/lecture.png"
+              alt="lecture-icon"
+            />
+            <p class="text-xl font-bold text-primary w-max">Lecture</p>
           </div>
-          <p class="program-description">
+          <p class="text-light">
             Listen to the speaker from various countries about the messages of
             sharing and opening
           </p>
         </li>
-        <li class="program">
-          <div class="icon-set">
-            <img src="./assets/icons/exhibition.png" alt="exhibition-icon" />
-            <p>CC Exhibition</p>
+        <li class="grid grid-cols-2 bg-[#383b4277] items-center mx-2 pr-2">
+          <div class="flex justify-start gap-2 items-center p-4">
+            <img
+              class="w-16 h-auto"
+              src="./assets/icons/exhibition.png"
+              alt="exhibition-icon"
+            />
+            <p class="text-xl font-bold text-primary w-max">CC Exhibition</p>
           </div>
-          <p class="program-description">
+          <p class="text-light">
             Appreciate various creations applying CC license of artists,
             organized from Art Center Nabi
           </p>
         </li>
-        <li class="program">
-          <div class="icon-set">
-            <img src="./assets/icons/forum.png" alt="forum-icon" />
-            <p>Forum</p>
+        <li class="grid grid-cols-2 bg-[#383b4277] items-center mx-2 pr-2">
+          <div class="flex justify-start gap-2 items-center p-4">
+            <img
+              class="w-16 h-auto"
+              src="./assets/icons/forum.png"
+              alt="forum-icon"
+            />
+            <p class="text-xl font-bold text-primary w-max">Forum</p>
           </div>
-          <p class="program-description">
+          <p class="text-light">
             Have the time to share your thoughts and opinions with experts for
             each tobic
           </p>
         </li>
-        <li class="program">
-          <div class="icon-set">
-            <img src="./assets/icons/workshop.png" alt="workshop-icon" />
-            <p>Workshop</p>
+        <li class="grid grid-cols-2 bg-[#383b4277] items-center mx-2 pr-2">
+          <div class="flex justify-start gap-2 items-center p-4">
+            <img
+              class="w-16 h-auto"
+              src="./assets/icons/workshop.png"
+              alt="workshop-icon"
+            />
+            <p class="text-xl font-bold text-primary w-max">Workshop</p>
           </div>
-          <p class="program-description">
+          <p class="text-light">
             Try creating your own work using open source license rather than
             just watching
           </p>
         </li>
-        <li class="program">
-          <div class="icon-set">
-            <img src="./assets/icons/ignite.png" alt="ignite-icon" />
-            <p>CC Ignite</p>
+        <li class="grid grid-cols-2 bg-[#383b4277] items-center mx-2 pr-2">
+          <div class="flex justify-start gap-2 items-center p-4">
+            <img
+              class="w-16 h-auto"
+              src="./assets/icons/ignite.png"
+              alt="ignite-icon"
+            />
+            <p class="text-xl font-bold text-primary w-max">CC Ignite</p>
           </div>
-          <p class="program-description">
+          <p class="text-light">
             Get opportunities to network with CC affiliate around the world,
             also after the summit.
           </p>
         </li>
       </ul>
-      <button>Join Hello Tomorrow Global Summit</button>
+      <button
+        class="border-none px-6 py-4 m-8 font-semibold bg-primary text-light rounded"
+      >
+        Join Hello Tomorrow Global Summit
+      </button>
     </section>
-    <section id="speakers">
-      <h2>Featured Speakers</h2>
-      <div class="indicator"></div>
-      <ul id="speakers-list">
-        <li>
-          <div>
-            <img src="./assets/backgrounds/speaker.jpg" alt="pattern" />
-            <img src="./assets/images/IrinaBorodina.jpg" alt="speaker" />
+    <section
+      id="speakers"
+      class="flex flex-col justify-center items-center gap-2 p-4"
+    >
+      <h2 class="text-secodary text-2xl mt-8 font-semibold">
+        Featured Speakers
+      </h2>
+      <div class="w-12 h-[2px] rounded mb-8 bg-primary"></div>
+      <ul id="speakers-list" class="flex flex-col justify-center items-center">
+        <li class="flex justify-center items-center my-4">
+          <div class="relative flex w-2/5">
+            <img
+              class="absolute top-0 left-0 w-20 h-20"
+              src="./assets/backgrounds/speaker.jpg"
+              alt="pattern"
+            />
+            <img
+              class="w-4/5 h-4/5 z-10 ml-4 mt-4"
+              src="./assets/images/IrinaBorodina.jpg"
+              alt="speaker"
+            />
           </div>
-          <div>
-            <h3>Irina Borodina</h3>
-            <p>
+          <div class="w-3/5">
+            <h3 class="text-secodary text-2xl font-semibold">Irina Borodina</h3>
+            <p class="text-sm text-primary italic">
               Professor, Novo Nordisk Foundation Center for Biosustainability
             </p>
-            <div></div>
-            <p>
+            <div class="w-6 h-[2px] bg-light my-2"></div>
+            <p class="text-sm font-semibold">
               Research interests: Metabolic Engineering, Synthetic Biology,
               Industrial Biotechnology
             </p>
           </div>
         </li>
-        <li>
-          <div>
-            <img src="./assets/backgrounds/speaker.jpg" alt="pattern" />
-            <img src="./assets/images/OliverRolland.jpg" alt="speaker" />
+        <li class="flex justify-center items-center my-4">
+          <div class="relative flex w-2/5">
+            <img
+              class="absolute top-0 left-0 w-20 h-20"
+              src="./assets/backgrounds/speaker.jpg"
+              alt="pattern"
+            />
+            <img
+              class="w-4/5 h-4/5 z-10 ml-4 mt-4"
+              src="./assets/images/OliverRolland.jpg"
+              alt="speaker"
+            />
           </div>
-          <div>
-            <h3>Oliver Rolland</h3>
-            <p>Managing Director chez Toulouse White Biotechnology (TWB)</p>
-            <div></div>
-            <p>
+          <div class="w-3/5">
+            <h3 class="text-secodary text-2xl font-semibold">Oliver Rolland</h3>
+            <p class="text-sm text-primary italic">
+              Managing Director chez Toulouse White Biotechnology (TWB)
+            </p>
+            <div class="w-6 h-[2px] bg-light my-2"></div>
+            <p class="text-sm font-semibold">
               He has recieved the Presidential Green Chemistry Award 2014 for
               “Farnesane: a Breakthrough Renewable Hydrocarbon for Use as Diesel
               and Jet Fuel”
@@ -143,7 +189,11 @@
           </div>
         </li>
       </ul>
-      <button>MORE <i class="fa-solid fa-chevron-down"></i></button>
+      <button
+        class="flex gap-2 justify-center items-center border-2 border-light w-full p-2 m-8"
+      >
+        MORE <i class="fa-solid fa-chevron-down text-primary"></i>
+      </button>
     </section>
   </body>
 </html>

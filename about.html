@@ -10,24 +10,12 @@
       src="https://kit.fontawesome.com/30e1c676d3.js"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#ec5242',
-              secodary: '#272a31',
-              smoke: 'd3d3d3',
-            },
-          },
-        },
-      };
-    </script> -->
   </head>
-  <body>
-    <main>
-      <header>
+  <body class="text-dark-smoke font-Lato">
+    <main
+      class="bg-[url('./assets/backgrounds/welcome.png')] bg-cover bg-center"
+    >
+      <header class="p-4">
         <img
           width="32px"
           height="32px"
@@ -35,10 +23,17 @@
           alt="menu-icon"
         />
       </header>
-      <section id="about">
-        <p id="caption">"Hello! Sharing world"</p>
-        <h1>HELLO TOMORROW GLOBAL SUMMIT 2023</h1>
-        <div class="description">
+      <section
+        id="about"
+        class="my-12 p-8 flex flex-col justify-center items-center"
+      >
+        <p class="text-xl text-primary my-1">"Hello! Sharing world"</p>
+        <h1 class="text-5xl font-bold text-primary text-center">
+          HELLO TOMORROW GLOBAL SUMMIT 2023
+        </h1>
+        <div
+          class="p-4 my-8 border text-sm bg-white border-light border-solid text-center"
+        >
           <p>
             Hello Tomorrow was created in 2011 by a group of individuals
             convinced that science has the potential to change the world for the
@@ -49,72 +44,105 @@
             helping Deep Tech startups and corporations build new solutions.
           </p>
         </div>
-        <p>
+        <p class="text-sm max-w-sm text-center">
           Please contact us per Email for any further questions about the Global
           Summit
         </p>
-        <p class="email">contact@hello-tomorrow.org</p>
+        <p class="text-sm font-semibold mb-8">contact@hello-tomorrow.org</p>
       </section>
     </main>
-    <section id="logo-section">
-      <h2>Hello Tommorrow Organization Logo</h2>
-      <div class="indicator"></div>
-      <p>
+    <section
+      id="logo-section"
+      class="my-12 p-8 flex flex-col justify-center items-center gap-2 border-b border-b-light"
+    >
+      <h2 class="text-secodary text-2xl mt-8 font-semibold text-center">
+        Hello Tommorrow Organization Logo
+      </h2>
+      <div class="w-12 h-[2px] rounded bg-primary"></div>
+      <p class="text-center text-sm w-4/5 mb-8">
         The logo of Hello Tomorrow organization was created by a team in Far Far
         Away
       </p>
-      <div id="logo">
-        <img src="./assets/icons/logo.svg" alt="" />
+      <div
+        class="w-full max-w-2xl flex justify-center border border-light py-4 mb-8"
+      >
+        <img class="w-80 h-auto" src="./assets/icons/logo.svg" alt="logo" />
       </div>
     </section>
-    <section id="speakers">
-      <h2>See the past Global Summits</h2>
-      <div class="indicator"></div>
-      <p>
+    <section
+      id="past-summits"
+      class="my-12 p-8 flex flex-col justify-center items-center gap-2 border-b border-b-light"
+    >
+      <h2 class="text-secodary text-2xl mt-8 font-semibold">
+        See the past Global Summits
+      </h2>
+      <div class="w-12 h-[2px] rounded bg-primary"></div>
+      <p class="text-center text-sm w-4/5 mb-8">
         Take a look at the last two Hello Tomorrow Global Summits which took
         place in Paris France
       </p>
-      <ul id="past-summits">
-        <li>
+      <ul
+        id="past-summits"
+        class="flex flex-col md:flex-row justify-center items-center gap-4"
+      >
+        <li class="relative">
           <img src="./assets/images/past-summit-1.webp" alt="past-summit" />
-          <div>
-            <h3>2020</h3>
-            <p>Hello Tomorrow Global Summit 2020 Paris</p>
+          <div
+            class="absolute top-0 left-0 bottom-0 right-0 bg-primary-transparent flex justify-center items-center flex-col"
+          >
+            <h3 class="text-4xl text-light font-bold">2020</h3>
+            <p class="text-light my-2">
+              Hello Tomorrow Global Summit 2020 Paris
+            </p>
           </div>
         </li>
-        <li>
+        <li class="relative">
           <img src="./assets/images/past-summit-2.webp" alt="past-summit" />
-          <div>
-            <h3>2021</h3>
-            <p>Hello Tomorrow Global Summit 2021 Londen</p>
+          <div
+            class="absolute top-0 left-0 bottom-0 right-0 bg-primary-transparent flex justify-center items-center flex-col"
+          >
+            <h3 class="text-4xl text-light font-bold">2021</h3>
+            <p class="text-light my-2">
+              Hello Tomorrow Global Summit 2021 Londan
+            </p>
           </div>
         </li>
       </ul>
     </section>
-    <section id="speakers">
-      <h2>Partners</h2>
-      <div class="indicator"></div>
-      <ul id="partners-list">
-        <li>
+    <section
+      id="partners"
+      class="flex flex-col justify-center items-center p-4 gap-2 bg-secodary"
+    >
+      <h2 class="text-light text-2xl mt-8 font-semibold">Partners</h2>
+      <div class="w-12 h-[2px] rounded mb-8 bg-primary"></div>
+      <ul
+        id="partners-list"
+        class="flex justify-center items-center flex-wrap gap-2"
+      >
+        <li class="w-32">
           <img src="./assets/images/BCG-Logo.png" alt="partner" />
         </li>
-        <li>
+        <li class="w-32">
           <img src="./assets/images/Infineon-Logo.png" alt="partner" />
         </li>
-        <li>
+        <li class="w-32">
           <img src="./assets/images/GTT-logo.png" alt="partner" />
         </li>
-        <li>
+        <li class="w-32">
           <img src="./assets/images/Loreal-Logo.png" alt="partner" />
         </li>
-        <li>
+        <li class="w-32">
           <img src="./assets/images/Orano-Logo.png" alt="partner" />
         </li>
       </ul>
     </section>
-    <footer>
-      <img src="./assets/icons/logo.svg" alt="logo" />
-      <p>&copy;2023 Hello Tomorrow France. Some Rights Reserved.</p>
+    <footer
+      class="grid grid-cols-2 justify-items-center items-center gap-4 p-8"
+    >
+      <img class="w-40" src="./assets/icons/logo.svg" alt="logo" />
+      <p class="text-sm">
+        &copy;2023 Hello Tomorrow France. Some Rights Reserved.
+      </p>
     </footer>
   </body>
 </html>

@@ -88,7 +88,6 @@ In order to run this project you need:
 Clone the repo into your local machine:
 git clone github.com/BahirHakimy/My-Portfolio.git
 
-
 ### Usage
 
 You can open the `index.html` file using a web browser or using VsCode extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
