@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Tomorrow Global Summit</title>
+    <script
+      src="https://kit.fontawesome.com/30e1c676d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#ec5242',
+              'primary-transparent': '#ec524299',
+              secondary: '#272a31',
+              walnut: '#3e3e3e',
+              light: '#d3d3d3',
+              'light-transparent': '#d3d3d366',
+              'dark-smoke': '#4c4c4c',
+            },
+            fontFamily: { Lato: 'Lato' },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Regular.ttf') format('truetype');
+        font-weight: normal;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Black.ttf') format('truetype');
+        font-weight: bold;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Bold.ttf') format('truetype');
+        font-weight: 600;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Italic.ttf') format('truetype');
+        font-weight: normal;
+        font-style: italic;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Light.ttf') format('truetype');
+        font-weight: lighter;
+      }
+    </style>
+  </head>
+  <body class="text-dark-smoke font-Lato relative">
+    <main
+      class="bg-[url('./assets/backgrounds/welcome.png')] bg-cover bg-center"
+    >
+      <header class="p-4 md:p-0">
+        <nav class="flex flex-col justify-center items-start md:items-center">
+          <div
+            id="mobile-menu"
+            class="fixed top-0 -left-full w-full h-screen z-10 bg-primary-transparent backdrop-blur flex flex-col p-4 transition-all"
+          >
+            <a
+              href="#"
+              id="close-button"
+              class="self-end"
+              aria-label="close menu"
+            >
+              <img
+                width="32px"
+                height="32px"
+                src="./assets/icons/close.svg"
+                alt="menu-icon"
+              />
+            </a>
+            <ul class="relative z-10">
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent"
+              >
+                <a
+                  class="font-semibold text-secondary block mobile-menu-item"
+                  href="./about.html"
+                  >About</a
+                >
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent"
+              >
+                <a
+                  class="font-semibold text-secondary block mobile-menu-item"
+                  href="index.html#main-program"
+                  >Program</a
+                >
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent"
+              >
+                <a
+                  class="font-semibold text-secondary block mobile-menu-item"
+                  href="#"
+                  >Join</a
+                >
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent"
+              >
+                <a
+                  class="font-semibold text-secondary block mobile-menu-item"
+                  href="#"
+                  >Sponser</a
+                >
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent"
+              >
+                <a
+                  class="font-semibold text-secondary block mobile-menu-item"
+                  href="#"
+                  >News</a
+                >
+              </li>
+            </ul>
+          </div>
+          <ul
+            class="hidden md:flex justify-end gap-8 bg-walnut w-full md:px-8 lg:px-16 xl:px-32 py-2"
+          >
+            <li class="text-white font-semibold text-sm">
+              <a
+                href="https://www.facebook.com/profile.php?id=100004886324671"
+                target="_blank"
+                aria-label="facebook"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a
+                href="https://twitter.com/bahir_hakimy"
+                target="_blank"
+                aria-label="twitter"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a href="#">Logout</a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a href="#">MyPage</a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a href="#">French</a>
+            </li>
+          </ul>
+          <div
+            class="hidden md:flex justify-between items-center bg-white w-full md:px-8 lg:px-16 xl:px-32"
+          >
+            <a href="." aria-label="logo" class="p-4">
+              <img
+                class="w-32 h-auto"
+                src="./assets/icons/logo.svg"
+                alt="logo"
+              />
+            </a>
+            <ul id="nav-links" class="flex justify-between items-center gap-8">
+              <li>
+                <a
+                  class="text-sm font-semibold text-secondary hover:text-primary"
+                  href="./about.html"
+                >
+                  About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm font-semibold text-secondary hover:text-primary"
+                  href="index.html#main-program"
+                  >Program</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm font-semibold text-secondary hover:text-primary"
+                  href="#"
+                  >Join</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm font-semibold text-secondary hover:text-primary"
+                  href="#"
+                  >Sponser</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm font-semibold text-secondary hover:text-primary"
+                  href="#"
+                  >News</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary hover:text-primary active:border-2 p-2 active:font-semibold border-primary"
+                >
+                  CC Campaign
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="#"
+            id="hamburger-button"
+            class="md:hidden"
+            aria-label="hamburger menu"
+          >
+            <img
+              width="32px"
+              height="32px"
+              src="./assets/icons/hamburger.svg"
+              alt="menu-icon"
+            />
+          </a>
+        </nav>
+      </header>
+      <section
+        id="about"
+        class="my-12 p-8 xl:px-32 lg:px-16 flex flex-col justify-center items-center"
+      >
+        <p class="text-xl text-primary my-1 md:hidden">
+          "Hello! Sharing world"
+        </p>
+        <h1 class="text-5xl font-bold text-primary text-center md:max-w-[50%]">
+          HELLO TOMORROW GLOBAL SUMMIT 2023
+        </h1>
+        <div
+          class="hidden md:block mt-8 mb-2 w-8 h-[2px] rounded bg-primary-transparent"
+        ></div>
+        <div
+          class="p-4 my-8 border text-sm bg-white border-light border-solid text-center md:max-w-[60%]"
+        >
+          <p>
+            Hello Tomorrow was created in 2011 by a group of individuals
+            convinced that science has the potential to change the world for the
+            better, but that the traditional model of technology transfer to
+            bring solutions from lab to market - and from idea to impact - could
+            not rise to this challenge. Since then we have built and
+            orchestrated the largest and widest Deep Tech network as well as
+            helping Deep Tech startups and corporations build new solutions.
+          </p>
+        </div>
+        <p class="text-sm max-w-sm text-center">
+          Please contact us per Email for any further questions about the Global
+          Summit
+        </p>
+        <p class="text-sm font-semibold mb-8 mt-1">
+          <a href="mailto:contact@hello-tomorrow.org" class="font-semibold"
+            >contact@hello-tomorrow.org</a
+          >
+          <i
+            class="fa-solid fa-chevron-right hidden md:inline pl-1 font-normal"
+          ></i>
+        </p>
+      </section>
+    </main>
+    <section
+      id="logo-section"
+      class="my-12 p-8 flex flex-col justify-center items-center gap-2 border-b border-b-light"
+    >
+      <h2 class="text-secondary text-2xl mt-8 font-semibold text-center">
+        Hello Tommorrow Organization Logo
+      </h2>
+      <div class="w-8 h-[2px] rounded bg-primary-transparent"></div>
+      <p class="text-center text-sm w-4/5 mb-8 md:max-w-[50%]">
+        The logo of Hello Tomorrow organization was created by a team in Far Far
+        Away, Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Aspernatur quia consequuntur assumenda adipisci rerum temporibus quae?
+        Error modi optio sed magni omnis impedit aut delectus voluptate, atque
+        esse quam incidunt.
+      </p>
+      <div
+        class="w-full max-w-2xl md:max-w-xl flex justify-center border border-light py-4 mb-8"
+      >
+        <img class="w-80 h-auto" src="./assets/icons/logo.svg" alt="logo" />
+      </div>
+    </section>
+    <section
+      id="past-summits"
+      class="relative -z-50 my-12 p-8 flex flex-col justify-center items-center gap-2 border-b border-b-light"
+    >
+      <h2 class="text-secondary text-2xl mt-8 font-semibold">
+        See the past Global Summits
+      </h2>
+      <div class="w-12 h-[2px] rounded bg-primary"></div>
+      <p class="text-center text-sm w-4/5 mb-8 md:font-semibold">
+        Take a look at the last two Hello Tomorrow Global Summits which took
+        place in Paris France
+      </p>
+      <ul
+        id="past-summits"
+        class="flex flex-col md:flex-row justify-center items-center gap-4"
+      >
+        <li class="relative -z-10">
+          <img src="./assets/images/past-summit-1.webp" alt="past-summit" />
+          <div
+            class="absolute top-0 left-0 bottom-0 right-0 bg-primary-transparent flex justify-center items-center flex-col"
+          >
+            <h3 class="text-4xl text-light font-bold">2020</h3>
+            <p class="text-light my-2">
+              Hello Tomorrow Global Summit 2020 Paris
+            </p>
+          </div>
+        </li>
+        <li class="relative -z-10">
+          <img src="./assets/images/past-summit-2.webp" alt="past-summit" />
+          <div
+            class="absolute top-0 left-0 bottom-0 right-0 bg-primary-transparent flex justify-center items-center flex-col"
+          >
+            <h3 class="text-4xl text-light font-bold">2021</h3>
+            <p class="text-light my-2">
+              Hello Tomorrow Global Summit 2021 Londan
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section
+      id="partners"
+      class="flex md:hidden flex-col justify-center items-center p-4 gap-2 bg-secondary"
+    >
+      <h2 class="text-light text-2xl mt-8 font-semibold">Partners</h2>
+      <div class="w-12 h-[2px] rounded mb-8 bg-primary"></div>
+      <ul
+        id="partners-list"
+        class="flex justify-center items-center flex-wrap gap-2"
+      >
+        <li class="w-32">
+          <img src="./assets/images/BCG-Logo.png" alt="partner" />
+        </li>
+        <li class="w-32">
+          <img src="./assets/images/Infineon-Logo.png" alt="partner" />
+        </li>
+        <li class="w-32">
+          <img src="./assets/images/GTT-logo.png" alt="partner" />
+        </li>
+        <li class="w-32">
+          <img src="./assets/images/Loreal-Logo.png" alt="partner" />
+        </li>
+        <li class="w-32">
+          <img src="./assets/images/Orano-Logo.png" alt="partner" />
+        </li>
+      </ul>
+    </section>
+    <footer
+      class="grid grid-cols-2 justify-items-center items-center gap-4 p-8 my-8 md:text-light md:bg-secondary"
+    >
+      <img class="w-40" src="./assets/icons/logo.svg" alt="logo" />
+      <div class="flex flex-col gap-4">
+        <p class="text-sm font-semibold">
+          &copy;2023 Hello Tomorrow France. Some Rights Reserved.
+        </p>
+        <p class="hidden md:block">
+          Hello Tomorrow was created in 2011 by a group of individuals convinced
+          that science has the potential to change the world for the better. for
+          any questions contact us on
+          <a href="mailto:contact@hello-tomorrow.org" class="font-semibold"
+            >contact@hello-tomorrow.org</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

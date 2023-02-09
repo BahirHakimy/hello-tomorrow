@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Tomorrow Global Summit</title>
+    <script
+      src="https://kit.fontawesome.com/30e1c676d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#ec5242',
+              'primary-transparent': '#ec524299',
+              secondary: '#272a31',
+              walnut: '#3e3e3e',
+              light: '#d3d3d3',
+              'light-transparent': '#d3d3d366',
+              'dark-smoke': '#4c4c4c',
+            },
+            fontFamily: { Lato: 'Lato' },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Regular.ttf') format('truetype');
+        font-weight: normal;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Black.ttf') format('truetype');
+        font-weight: bold;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Bold.ttf') format('truetype');
+        font-weight: 600;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Italic.ttf') format('truetype');
+        font-weight: normal;
+        font-style: italic;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Light.ttf') format('truetype');
+        font-weight: lighter;
+      }
+    </style>
+  </head>
+  <body class="text-dark-smoke font-Lato">
+    <main class="bg-[url('./assets/backgrounds/welcome.png')] bg-cover">
+      <header class="p-4 md:p-0">
+        <nav class="flex flex-col justify-center items-start md:items-center">
+          <div
+            id="mobile-menu"
+            class="fixed top-0 -left-full w-full h-screen z-10 bg-primary-transparent backdrop-blur flex flex-col p-4 transition-all"
+          >
+            <a
+              href="#"
+              id="close-button"
+              class="self-end"
+              aria-label="close menu"
+            >
+              <img
+                width="32px"
+                height="32px"
+                src="./assets/icons/close.svg"
+                alt="menu-icon"
+              />
+            </a>
+            <ul class="relative z-10">
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent mobile-menu-item"
+              >
+                <a
+                  class="font-semibold text-secondary block"
+                  href="./about.html"
+                  >About</a
+                >
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent mobile-menu-item"
+              >
+                <a
+                  class="font-semibold text-secondary block"
+                  href="index.html#main-program"
+                  >Program</a
+                >
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent mobile-menu-item"
+              >
+                <a class="font-semibold text-secondary block" href="#">Join</a>
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent mobile-menu-item"
+              >
+                <a class="font-semibold text-secondary block" href="#"
+                  >Sponser</a
+                >
+              </li>
+              <li
+                class="p-4 text-3xl active:bg-primary hover:bg-light-transparent mobile-menu-item"
+              >
+                <a class="font-semibold text-secondary block" href="#">News</a>
+              </li>
+            </ul>
+          </div>
+          <ul
+            class="hidden md:flex justify-end gap-8 bg-walnut w-full md:px-8 lg:px-16 xl:px-32 py-2"
+          >
+            <li class="text-white font-semibold text-sm">
+              <a
+                href="https://www.facebook.com/profile.php?id=100004886324671"
+                target="_blank"
+                aria-label="facebook"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a
+                href="https://twitter.com/bahir_hakimy"
+                target="_blank"
+                aria-label="twitter"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a href="#">English</a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a href="#">MyPage</a>
+            </li>
+            <li class="text-white font-semibold text-sm">
+              <a href="#">Logout</a>
+            </li>
+          </ul>
+          <div
+            class="hidden md:flex justify-between items-center bg-white w-full md:px-8 lg:px-16 xl:px-32"
+          >
+            <a href="." aria-label="logo" class="p-4">
+              <img
+                class="w-32 h-auto"
+                src="./assets/icons/logo.svg"
+                alt="logo"
+              />
+            </a>
+            <ul id="nav-links" class="flex justify-between items-center gap-8">
+              <li>
+                <a
+                  class="text-sm font-semibold text-secondary hover:text-primary"
+                  href="./about.html"
+                >
+                  About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm font-semibold text-secondary hover:text-primary"
+                  href="#main-program"
+                  >Program</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm font-semibold text-secondary hover:text-primary"
+                  href="#"
+                  >Join</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm font-semibold text-secondary hover:text-primary"
+                  href="#"
+                  >Sponser</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm font-semibold text-secondary hover:text-primary"
+                  href="#"
+                  >News</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary hover:text-primary active:border-2 p-2 active:font-semibold border-primary"
+                >
+                  CC Campaign
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="#"
+            id="hamburger-button"
+            class="md:hidden"
+            aria-label="hamburger menu"
+          >
+            <img
+              width="32px"
+              height="32px"
+              src="./assets/icons/hamburger.svg"
+              alt="menu-icon"
+            />
+          </a>
+        </nav>
+      </header>
+      <section
+        id="welcome"
+        class="my-12 p-4 xl:px-32 lg:px-16 md:px-8 flex flex-col justify-center items-start"
+      >
+        <p class="text-xl text-primary my-1 md:text-3xl">
+          "Hello! Sharing world"
+        </p>
+        <div
+          class="bg-[url('./assets/backgrounds/title.jpg')] bg-clip-text text-transparent bg-center bg-cover"
+        >
+          <h1 class="text-5xl font-bold md:text-8xl">
+            HELLO TOMORROW GLOBAL SUMMIT 2023
+          </h1>
+        </div>
+        <div
+          class="p-4 my-8 border-2 text-sm border-white border-solid lg:max-w-[60%]"
+        >
+          <p>
+            Under the high patronage of Mr. Emmanuel Macron president of the
+            French republic, Welcome to the epiccenter of Deep Tech, We present
+            you the new era of technology
+          </p>
+        </div>
+        <h2 class="text-3xl my-2 font-bold">2023.03.9(FRI) ~ 10(SAT)</h2>
+        <p class="text-sm font-semibold mb-8">
+          @ The CENTQUATRE-PARIS, 5 Rue Curial, 75019 Paris France
+        </p>
+      </section>
+    </main>
+    <section
+      id="main-program"
+      class="flex flex-col justify-center items-center gap-2 py-4 xl:px-32 lg:px-16 md:px-8 bg-[url('./assets/backgrounds/programs.jpg')] bg-center"
+    >
+      <h2 class="text-light text-2xl mt-8 font-semibold">Main Program</h2>
+      <div class="w-12 h-[2px] rounded mb-8 bg-primary"></div>
+      <ul
+        id="programs"
+        class="flex flex-col md:flex-row flex-wrap gap-2 justify-center py-4"
+      >
+        <li
+          class="grid grid-cols-2 md:grid-cols-1 bg-[#383b4277] items-center mx-2 pr-2 md:p-4 hover:border-2 border-light cursor-pointer md:h-72 md:w-52 md:mx-0"
+        >
+          <div
+            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-0 sm:p-4"
+          >
+            <img
+              class="w-16 h-auto"
+              src="./assets/icons/lecture.png"
+              alt="lecture-icon"
+            />
+            <p class="text-base sm:text-xl font-bold text-primary w-max">
+              Lecture
+            </p>
+          </div>
+          <p class="text-light md:text-center md:m-auto">
+            Listen to the speaker from various countries about the messages of
+            sharing and opening
+          </p>
+        </li>
+        <li
+          class="grid grid-cols-2 md:grid-cols-1 bg-[#383b4277] items-center mx-2 pr-2 md:p-4 hover:border-2 border-light cursor-pointer md:h-72 md:w-52 md:mx-0"
+        >
+          <div
+            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-0 sm:p-4"
+          >
+            <img
+              class="w-16 h-auto"
+              src="./assets/icons/exhibition.png"
+              alt="exhibition-icon"
+            />
+            <p class="text-base sm:text-xl font-bold text-primary w-max">
+              CC Exhibition
+            </p>
+          </div>
+          <p class="text-light md:text-center md:m-auto">
+            Appreciate various creations applying CC license of artists,
+            organized from Art Center Nabi
+          </p>
+        </li>
+        <li
+          class="grid grid-cols-2 md:grid-cols-1 bg-[#383b4277] items-center mx-2 pr-2 md:p-4 hover:border-2 border-light cursor-pointer md:h-72 md:w-52 md:mx-0"
+        >
+          <div
+            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-0 sm:p-4"
+          >
+            <img
+              class="w-16 h-auto"
+              src="./assets/icons/forum.png"
+              alt="forum-icon"
+            />
+            <p class="text-base sm:text-xl font-bold text-primary w-max">
+              Forum
+            </p>
+          </div>
+          <p class="text-light md:text-center md:m-auto">
+            Have the time to share your thoughts and opinions with experts for
+            each tobic
+          </p>
+        </li>
+        <li
+          class="grid grid-cols-2 md:grid-cols-1 bg-[#383b4277] items-center mx-2 pr-2 md:p-4 hover:border-2 border-light cursor-pointer md:h-72 md:w-52 md:mx-0"
+        >
+          <div
+            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-0 sm:p-4"
+          >
+            <img
+              class="w-16 h-auto"
+              src="./assets/icons/workshop.png"
+              alt="workshop-icon"
+            />
+            <p class="text-base sm:text-xl font-bold text-primary w-max">
+              Workshop
+            </p>
+          </div>
+          <p class="text-light md:text-center md:m-auto">
+            Try creating your own work using open source license rather than
+            just watching
+          </p>
+        </li>
+        <li
+          class="grid grid-cols-2 md:grid-cols-1 bg-[#383b4277] items-center mx-2 pr-2 md:p-4 hover:border-2 border-light cursor-pointer md:h-72 md:w-52 md:mx-0"
+        >
+          <div
+            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-0 sm:p-4"
+          >
+            <img
+              class="w-16 h-auto"
+              src="./assets/icons/ignite.png"
+              alt="ignite-icon"
+            />
+            <p class="text-base sm:text-xl font-bold text-primary w-max">
+              CC Ignite
+            </p>
+          </div>
+          <p class="text-light md:text-center md:m-auto">
+            Get opportunities to network with CC affiliate around the world,
+            also after the summit.
+          </p>
+        </li>
+      </ul>
+      <button
+        class="border-none md:hidden px-6 py-4 m-8 font-semibold bg-primary text-light rounded"
+      >
+        Join Hello Tomorrow Global Summit
+      </button>
+      <button
+        class="hidden md:block border-b m-8 font-semibold bg-transparent text-light"
+      >
+        SEE THE WHOLE PROGRAM
+      </button>
+    </section>
+    <section
+      id="speakers"
+      class="flex flex-col justify-center items-center gap-2 p-4 xl:px-32 lg:px-16 md:px-8"
+    >
+      <h2 class="text-secondary text-2xl mt-8 font-semibold">
+        Featured Speakers
+      </h2>
+      <div class="w-12 h-[2px] rounded mb-8 bg-primary"></div>
+      <ul
+        id="speakers-list"
+        class="flex flex-col md:grid grid-cols-2 justify-center items-center"
+      >
+        <li class="flex justify-center items-center my-4">
+          <div class="relative flex w-2/5">
+            <img
+              class="absolute top-0 left-0 w-20 h-20"
+              src="./assets/backgrounds/speaker.jpg"
+              alt="pattern"
+            />
+            <img
+              class="w-4/5 h-4/5 z-10 ml-4 mt-4"
+              src="./assets/images/IrinaBorodina.jpg"
+              alt="speaker"
+            />
+          </div>
+          <div class="w-3/5">
+            <h3 class="text-secondary text-2xl font-semibold">
+              Irina Borodina
+            </h3>
+            <p class="text-sm text-primary italic">
+              Professor, Novo Nordisk Foundation Center for Biosustainability
+            </p>
+            <div class="w-6 h-[2px] bg-light my-2"></div>
+            <p class="text-sm font-semibold">
+              Research interests: Metabolic Engineering, Synthetic Biology,
+              Industrial Biotechnology
+            </p>
+          </div>
+        </li>
+        <li class="flex justify-center items-center my-4">
+          <div class="relative flex w-2/5">
+            <img
+              class="absolute top-0 left-0 w-20 h-20"
+              src="./assets/backgrounds/speaker.jpg"
+              alt="pattern"
+            />
+            <img
+              class="w-4/5 h-4/5 z-10 ml-4 mt-4"
+              src="./assets/images/OliverRolland.jpg"
+              alt="speaker"
+            />
+          </div>
+          <div class="w-3/5">
+            <h3 class="text-secondary text-2xl font-semibold">
+              Oliver Rolland
+            </h3>
+            <p class="text-sm text-primary italic">
+              Managing Director chez Toulouse White Biotechnology (TWB)
+            </p>
+            <div class="w-6 h-[2px] bg-light my-2"></div>
+            <p class="text-sm font-semibold">
+              He has recieved the Presidential Green Chemistry Award 2014 for
+              “Farnesane: a Breakthrough Renewable Hydrocarbon for Use as Diesel
+              and Jet Fuel”
+            </p>
+          </div>
+        </li>
+      </ul>
+      <button
+        class="flex gap-2 justify-center items-center border-2 border-light w-full p-2 m-8 md:hidden"
+      >
+        MORE <i class="fa-solid fa-chevron-down text-primary"></i>
+      </button>
+    </section>
+    <section
+      id="partners"
+      class="hidden md:flex flex-col justify-center items-center p-4 gap-2 bg-secondary"
+    >
+      <h2 class="text-light text-2xl mt-8 font-semibold">Partners</h2>
+      <div class="w-12 h-[2px] rounded mb-8 bg-primary"></div>
+      <ul
+        id="partners-list"
+        class="flex justify-center items-center flex-wrap gap-2 md:gap-8"
+      >
+        <li class="w-32">
+          <a href="https://www.google.com/search?q=bcg" target="_blank">
+            <img src="./assets/images/BCG-Logo.png" alt="partner" />
+          </a>
+        </li>
+        <li class="w-32">
+          <a href="https://www.google.com/search?q=infineon" target="_blank">
+            <img src="./assets/images/Infineon-Logo.png" alt="partner" />
+          </a>
+        </li>
+        <li class="w-32">
+          <a href="https://www.google.com/search?q=gtt" target="_blank">
+            <img src="./assets/images/GTT-logo.png" alt="partner" />
+          </a>
+        </li>
+        <li class="w-32">
+          <a href="https://www.google.com/search?q=loreal" target="_blank">
+            <img src="./assets/images/Loreal-Logo.png" alt="partner" />
+          </a>
+        </li>
+        <li class="w-32">
+          <a href="https://www.google.com/search?q=orano" target="_blank">
+            <img src="./assets/images/Orano-Logo.png" alt="partner" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <footer
+      class="hidden md:grid grid-cols-2 justify-items-center items-center gap-4 p-8 my-8"
+    >
+      <img class="w-40" src="./assets/icons/logo.svg" alt="logo" />
+      <div class="flex flex-col gap-4">
+        <p class="text-sm font-semibold">
+          &copy;2023 Hello Tomorrow France. Some Rights Reserved.
+        </p>
+        <p>
+          Hello Tomorrow was created in 2011 by a group of individuals convinced
+          that science has the potential to change the world for the better. for
+          any questions contact us on
+          <a href="mailto:contact@hello-tomorrow.org" class="font-semibold"
+            >contact@hello-tomorrow.org</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
