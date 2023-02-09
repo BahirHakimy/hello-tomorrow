@@ -5,11 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Tomorrow Global Summit</title>
-    <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/30e1c676d3.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#ec5242',
+              'primary-transparent': '#ec524299',
+              secondary: '#272a31',
+              walnut: '#3e3e3e',
+              light: '#d3d3d3',
+              'light-transparent': '#d3d3d366',
+              'dark-smoke': '#4c4c4c',
+            },
+            fontFamily: { Lato: 'Lato' },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Regular.ttf') format('truetype');
+        font-weight: normal;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Black.ttf') format('truetype');
+        font-weight: bold;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Bold.ttf') format('truetype');
+        font-weight: 600;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Italic.ttf') format('truetype');
+        font-weight: normal;
+        font-style: italic;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Light.ttf') format('truetype');
+        font-weight: lighter;
+      }
+    </style>
   </head>
   <body class="text-dark-smoke font-Lato relative">
     <main

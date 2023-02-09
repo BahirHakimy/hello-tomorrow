@@ -12,8 +12,9 @@ module.exports = {
         'light-transparent': '#d3d3d366',
         'dark-smoke': '#4c4c4c',
       },
-      fontFamily: { Lato: 'Lato', Cocogoose: 'Cocogoose' },
+      fontFamily: { Lato: 'Lato' },
     },
   },
   plugins: [],
 };
+

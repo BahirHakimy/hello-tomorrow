@@ -5,11 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Tomorrow Global Summit</title>
-    <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/30e1c676d3.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#ec5242',
+              'primary-transparent': '#ec524299',
+              secondary: '#272a31',
+              walnut: '#3e3e3e',
+              light: '#d3d3d3',
+              'light-transparent': '#d3d3d366',
+              'dark-smoke': '#4c4c4c',
+            },
+            fontFamily: { Lato: 'Lato' },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Regular.ttf') format('truetype');
+        font-weight: normal;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Black.ttf') format('truetype');
+        font-weight: bold;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Bold.ttf') format('truetype');
+        font-weight: 600;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Italic.ttf') format('truetype');
+        font-weight: normal;
+        font-style: italic;
+      }
+
+      @font-face {
+        font-family: 'Lato';
+        src: url('./assets/fonts/lato/Lato-Light.ttf') format('truetype');
+        font-weight: lighter;
+      }
+    </style>
   </head>
   <body class="text-dark-smoke font-Lato">
     <main class="bg-[url('./assets/backgrounds/welcome.png')] bg-cover">
@@ -216,14 +266,16 @@
           class="grid grid-cols-2 md:grid-cols-1 bg-[#383b4277] items-center mx-2 pr-2 md:p-4 hover:border-2 border-light cursor-pointer md:h-72 md:w-52 md:mx-0"
         >
           <div
-            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-4"
+            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-0 sm:p-4"
           >
             <img
               class="w-16 h-auto"
               src="./assets/icons/lecture.png"
               alt="lecture-icon"
             />
-            <p class="text-xl font-bold text-primary w-max">Lecture</p>
+            <p class="text-base sm:text-xl font-bold text-primary w-max">
+              Lecture
+            </p>
           </div>
           <p class="text-light md:text-center md:m-auto">
             Listen to the speaker from various countries about the messages of
@@ -234,14 +286,16 @@
           class="grid grid-cols-2 md:grid-cols-1 bg-[#383b4277] items-center mx-2 pr-2 md:p-4 hover:border-2 border-light cursor-pointer md:h-72 md:w-52 md:mx-0"
         >
           <div
-            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-4"
+            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-0 sm:p-4"
           >
             <img
               class="w-16 h-auto"
               src="./assets/icons/exhibition.png"
               alt="exhibition-icon"
             />
-            <p class="text-xl font-bold text-primary w-max">CC Exhibition</p>
+            <p class="text-base sm:text-xl font-bold text-primary w-max">
+              CC Exhibition
+            </p>
           </div>
           <p class="text-light md:text-center md:m-auto">
             Appreciate various creations applying CC license of artists,
@@ -252,14 +306,16 @@
           class="grid grid-cols-2 md:grid-cols-1 bg-[#383b4277] items-center mx-2 pr-2 md:p-4 hover:border-2 border-light cursor-pointer md:h-72 md:w-52 md:mx-0"
         >
           <div
-            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-4"
+            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-0 sm:p-4"
           >
             <img
               class="w-16 h-auto"
               src="./assets/icons/forum.png"
               alt="forum-icon"
             />
-            <p class="text-xl font-bold text-primary w-max">Forum</p>
+            <p class="text-base sm:text-xl font-bold text-primary w-max">
+              Forum
+            </p>
           </div>
           <p class="text-light md:text-center md:m-auto">
             Have the time to share your thoughts and opinions with experts for
@@ -270,14 +326,16 @@
           class="grid grid-cols-2 md:grid-cols-1 bg-[#383b4277] items-center mx-2 pr-2 md:p-4 hover:border-2 border-light cursor-pointer md:h-72 md:w-52 md:mx-0"
         >
           <div
-            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-4"
+            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-0 sm:p-4"
           >
             <img
               class="w-16 h-auto"
               src="./assets/icons/workshop.png"
               alt="workshop-icon"
             />
-            <p class="text-xl font-bold text-primary w-max">Workshop</p>
+            <p class="text-base sm:text-xl font-bold text-primary w-max">
+              Workshop
+            </p>
           </div>
           <p class="text-light md:text-center md:m-auto">
             Try creating your own work using open source license rather than
@@ -288,14 +346,16 @@
           class="grid grid-cols-2 md:grid-cols-1 bg-[#383b4277] items-center mx-2 pr-2 md:p-4 hover:border-2 border-light cursor-pointer md:h-72 md:w-52 md:mx-0"
         >
           <div
-            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-4"
+            class="flex justify-start md:justify-center md:flex-col gap-2 items-center p-0 sm:p-4"
           >
             <img
               class="w-16 h-auto"
               src="./assets/icons/ignite.png"
               alt="ignite-icon"
             />
-            <p class="text-xl font-bold text-primary w-max">CC Ignite</p>
+            <p class="text-base sm:text-xl font-bold text-primary w-max">
+              CC Ignite
+            </p>
           </div>
           <p class="text-light md:text-center md:m-auto">
             Get opportunities to network with CC affiliate around the world,
